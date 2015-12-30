@@ -2,7 +2,6 @@ package org.joolzminer.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
 import org.springframework.core.style.ToStringCreator;
 import org.springframework.util.Assert;
 

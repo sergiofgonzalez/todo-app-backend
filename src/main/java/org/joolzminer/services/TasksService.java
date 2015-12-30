@@ -12,13 +12,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class TasksService {
 	
-	@SuppressWarnings("unused")
 	private static final Logger LOGGER = LoggerFactory.getLogger(TasksService.class);
 	
 	@Autowired
 	private TasksRepository tasksRepository;
 	
 	public List<Task> getTasksForUser(String user) {
+		LOGGER.debug("About to retrieve tasks from the db associated to user: `{}`", user);
 		return tasksRepository.findByUser(user);
 	}
 }

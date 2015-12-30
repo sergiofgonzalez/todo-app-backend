@@ -1,6 +1,6 @@
 application:
   dataSource:
-    url: jdbc:mysql://spark:3306/todobe?autoReconnect=true
+    url: jdbc:mysql://spark:3306/todobe?autoReconnect=true&useSSL=false
     username: root
     password: Accenture1
         
@@ -15,4 +15,10 @@ application:
       
 logging:
     level:
-        org.joolzminer.examples.springdata: debug
+        org.joolzminer: debug
+        
+spring:
+  jpa:
+    hibernate:
+      naming-strategy:
+        org.hibernate.cfg.ImprovedNamingStrategy

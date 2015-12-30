@@ -7,5 +7,4 @@ import org.springframework.data.repository.Repository;
 
 public interface TasksRepository extends Repository<Task, Long> {
 	public List<Task> findByUser(String user);
-
 }
